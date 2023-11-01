@@ -5,13 +5,15 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import LightModeIcon from '@mui/icons-material/LightMode';
 import {Link} from "react-router-dom"
 import DarkModeIcon from '@mui/icons-material/DarkMode';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { useContext } from 'react';
 import MyContext from '../../context/data/MyContext';
 const navigation = [
   { name: 'All Product', Link: '/allproduct', current: false },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'Order', Link: '/order', current: false },
+  { name: 'Admin', Link: '/admin', current: false },
+  { name: 'Logout', Link: '/logout', current: false },
+
 ]
 
 function classNames(...classes) {
@@ -23,6 +25,7 @@ const Navbar = () => {
   const {mode,toggleMode} = context
   return (
   <>
+  
    <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
         <>
@@ -79,9 +82,11 @@ const Navbar = () => {
                   {
   mode === 'light' ? (<LightModeIcon  style={{fontSize:'24px'}}/>) : mode === 'dark' ? <DarkModeIcon  style={{fontSize:'24px'}}/> : ''
 }
-
                   </div>
                 </button>
+                  <button>
+                  <ShoppingCartIcon className='text-gray-400 ml-3'/>
+                  </button>
 
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">

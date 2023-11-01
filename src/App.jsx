@@ -9,6 +9,9 @@ import  Dashboard from './pages/admin/dashboard/Dashboard'
 import Nopage from "./pages/nopage/Nopage"
 import MyState from './context/data/MyState'
 import Allproduct from './pages/allproducts/Allproduct'
+import Login from './pages/registration/Login'
+import Signup from './pages/registration/Signup'
+import Productinfo from './pages/productinfo/Productinfo'
 function App() {
   return (
   <>
@@ -21,6 +24,9 @@ function App() {
       <Route path='/admin' element={<Admin/>} />
       <Route path='/dashboard' element={<Dashboard/>} />
       <Route path='/allproduct' element={<Allproduct/>} />
+      <Route path='/login' element={<Login/>} />
+      <Route path='/signup' element={<Signup/>} />
+      <Route path='/productinfo' element={<Productinfo/>} />
       <Route path='*' element={<Nopage/>} />
     </Routes>
   </Router>
