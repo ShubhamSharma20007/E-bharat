@@ -8,6 +8,7 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { useContext } from 'react';
 import MyContext from '../../context/data/MyContext';
+import Cart from '../../pages/cart/Cart';
 const navigation = [
   { name: 'All Product', Link: '/allproduct', current: false },
   { name: 'Order', Link: '/order', current: false },
@@ -84,9 +85,9 @@ const Navbar = () => {
 }
                   </div>
                 </button>
-                  <button>
+                  <Link to="/cart">
                   <ShoppingCartIcon className='text-gray-400 ml-3'/>
-                  </button>
+                  </Link>
 
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">

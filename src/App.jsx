@@ -26,7 +26,7 @@ function App() {
       <Route path='/allproduct' element={<Allproduct/>} />
       <Route path='/login' element={<Login/>} />
       <Route path='/signup' element={<Signup/>} />
-      <Route path='/productinfo' element={<Productinfo/>} />
+      <Route path='/productinfo/:id' element={<Productinfo/>} />
       <Route path='*' element={<Nopage/>} />
     </Routes>
   </Router>

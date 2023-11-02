@@ -7,6 +7,7 @@ import Filter from "../../components/Filter/Filter"
 import Productcard from "../../components/ProductCard/ProductCard"
 import Testimonial from "../../components/Testimonial/Testimonial"
 import Footer from '../../components/Footer/Footer'
+
 const Home = () => {
 
   return (
@@ -17,8 +18,10 @@ const Home = () => {
    <Filter/>
    <Productcard/>
     <Testimonial/>
-      </Layout>
+
     <Footer/>
+      </Layout>
+   
     </>
   )
 }
