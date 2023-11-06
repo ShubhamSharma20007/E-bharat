@@ -47,7 +47,7 @@ const Cart = () => {
         <Dialog as="div" className="relative z-10  bg-white" onClose={setOpen}>
           <div className=" inset-0 overflow-hidden "  >
             <div className="absolute inset-0 overflow-hidden ">
-              <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10 ">
+              <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full p-0 m-2 ">
                 <Transition.Child
                   as={Fragment}
                   enter="transform transition ease-in-out duration-500 sm:duration-700"
@@ -130,7 +130,7 @@ const Cart = () => {
                         <div className="mt-6  flex justify-center items-center" >
                           <button
                             onClick={handleshow}
-                            className=" flex items-center w-full justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                            className=" flex items-center w-screen sm:p-3 justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
                           >
                             Checkout
                           </button>

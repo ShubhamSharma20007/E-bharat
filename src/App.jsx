@@ -11,7 +11,9 @@ import MyState from './context/data/MyState'
 import Allproduct from './pages/allproducts/Allproduct'
 import Login from './pages/registration/Login'
 import Signup from './pages/registration/Signup'
+import Addproduct from './pages/admin/pages/Addproduct'
 import Productinfo from './pages/productinfo/Productinfo'
+import Updateproduct from './pages/admin/pages/Updateproduct'
 function App() {
   return (
   <>
@@ -26,6 +28,8 @@ function App() {
       <Route path='/allproduct' element={<Allproduct/>} />
       <Route path='/login' element={<Login/>} />
       <Route path='/signup' element={<Signup/>} />
+      <Route path='/addproduct' element={<Addproduct/>} />
+      <Route path='/updateproduct' element={<Updateproduct/>} />
       <Route path='/productinfo/:id' element={<Productinfo/>} />
       <Route path='*' element={<Nopage/>} />
     </Routes>
